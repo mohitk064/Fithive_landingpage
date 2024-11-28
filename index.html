@@ -4,9 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FitHive - Explore curated gyms, studios, and fitness centers across cities like New Delhi and Bangalore.">
+  <meta name="keywords" content="fitness, gyms, studios, New Delhi, Bangalore, fitness platform">
   <link rel="icon" href="assets/icon.png">
   <link rel="stylesheet" href="style.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
   <title>FitHive</title>
 </head>
@@ -17,8 +20,11 @@
       <p class="text">FitHive</p>
     </div>
     <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
+      <div class="hamburger" id="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul id="nav-list" class="nav-list">
+        <li><a href="#" class="active">Home</a></li>
         <li><a href="#About">About</a></li>
         <li><a href="#Features">Features</a></li>
         <li><a href="#Contact">Contact</a></li>
@@ -26,6 +32,7 @@
     </nav>
     <a href="#" class="btn-join">Join</a>
   </header>
+
   <!-- -------------hero------------- -->
   <div id="Home">
     <section class="hero">
@@ -36,12 +43,10 @@
         <a href="#" class="btn-explore">Explore Now</a>
       </div>
       <div class="image">
-        <img src="assets/fitness_model.jpg" alt="Fitness Model">
+        <img src="assets/fitness_model.jpg" alt="Person exercising in a fitness studio">
       </div>
     </section>
-  </div>
-  <!-- ----------About-------------- -->
-  <div id="About">
+  </div><div id="About">
     <section class="fitness-journey" id="About">
       <div class="journey-image">
         <img src="assets/model 2.jpg" alt="Fitness Model">
@@ -212,10 +217,13 @@
       </div>
     </div>
   </footer>
-  
+
   <script>
-    window.addEventListener('load', () => {
-      document.documentElement.style.scrollBehavior = 'smooth';
+    const hamburger = document.getElementById('hamburger');
+    const navList = document.getElementById('nav-list');
+
+    hamburger.addEventListener('click', () => {
+      navList.classList.toggle('show');
     });
   </script>
 </body>
