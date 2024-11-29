@@ -459,7 +459,7 @@ nav ul li a {
   margin-bottom: 15px;
 }
 
-.btn-card {
+.btn-card1 {
   display: inline-block;
   padding: 10px 20px;
   color: #333;
@@ -469,8 +469,22 @@ nav ul li a {
   font-weight: bold;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
+.btn-card2 {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #ffa500;
+  background-color: #333;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
 
-.btn-card:hover {
+.btn-card1:hover {
+  background-color: #ffffff;
+  color: #ffa500;
+}
+.btn-card2:hover {
   background-color: #ffffff;
   color: #ffa500;
 }
